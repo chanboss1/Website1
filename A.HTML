@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Character encoding and responsive viewport setup -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- External stylesheet link -->
+  <link rel="stylesheet" href="A.css">
+  
+  <!-- Force light color scheme to prevent browser dark-mode overrides -->
+  <meta name="color-scheme" content="only light">
+</head>
+<body>
+
+<!-- HEADER SECTION: Navigation and Branding -->
+<header> 
+  <nav class="navbar">
+
+    <!-- Brand Logo and Site Name -->
+    <div class="logo-class">
+      <img class="logo-icon" src="pictures/triskelejj_1.jpg" alt="Logo">
+      <a href="#" class="nav-logo">
+        <h2 class="logo-text">Chankaye</h2>
+      </a>
+    </div>
+
+    <!-- Mobile Navigation Toggle (Hamburger Icon) -->
+    <button class="menu-toggle" id="menuToggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <!-- Navigation Menu Items -->
+    <ul class="nav-menu" id="navMenu">
+      <li class="nav-item">
+        <a href="#home" class="nav-link">home</a>
+      </li>
+      <li class="nav-item">
+        <a href="#About" class="nav-link">About</a>
+      </li>
+      <li class="nav-item">
+        <a href="#Contact" class="nav-link">Contact</a>
+      </li>
+<li class="nav-item">
+  <a href="#browse-websites" class="nav-link">Browse Websites</a>
+</li>
+
+    </ul>
+    
+  </nav>
+</header>
+<div class="my-rectangle"></div>
+<div class="my-rectanglee"></div>
+<!-- MAIN CONTENT AREA -->
+<main>
+
+  <!-- Hero Section: Landing Intro -->
+  <section id="home" class="hero">
+    <!-- Visual background effect -->
+    <div class="glow"></div>
+
+    <!-- Decorative Floating Cards -->
+    <div class="float-card card-1">
+      <div class="card1">
+<div class="dots"><span></span><span></span><span></span></div>
+<div class="bar1">
+  <span class="card-label">Built by me</span>
+</div>
+        <img class="card-pic" src="pictures/chankkkk.jpg" alt="Card Preview">
+      </div>
+    </div>
+    
+    <div class="float-card card-2">
+      <div class="dots"><span></span><span></span><span></span></div>
+  <div class="bar2"><span class="card-label1">Built by Chankaye Dikaso</span> </div>
+    </div>
+    
+    <div class="float-card card-3">
+      <div class="dots"><span></span><span></span><span></span></div>
+        <div class="bar2"><span class="card-label1">Design as you like!</span> </div>
+    </div>
+    
+    <div class="float-card card-4">
+      <div class="dots"><span></span><span></span><span></span></div>
+    <div class="bar4"><span class="card-label4"> Website for any business or for personal use.</span> </div>
+    </div>
+
+    <!-- Main Value Proposition Heading -->
+    <h1 class="hero-title">You need a website?<br>I can build it for you.</h1>
+    
+    <!-- Service Category Chips -->
+    <div class="chip-row">
+      <span class="chip">Shops</span><span class="chip">Cafés</span><span class="chip">Game Zones</span>
+      <span class="chip">Salons</span><span class="chip">Gyms</span><span class="chip">Restaurants</span>
+      <span class="chip">Hotels</span><span class="chip">Companies</span>
+    </div>
+
+    <p class="hero-subtitle">Or any other business — just tell me what you want, and I'll create it.</p>
+    
+  <div class="button-box-wrapper" >
+    
+      <!-- 2. Black Box second -->
+  <div class="hero-black-box"></div>
+</div>
+  <!-- 1. Button first -->
+  <a href="#browse-websites" class="hero-btn">Browse Websites</a>
+
+<!--    <div class="wave-divider">
+  <svg viewBox="0 0 500 100" preserveAspectRatio="none">
+    <path d="M0,0 C150,100 350,100 500,0 L500,80 L0,80 Z" fill="white"></path>
+  </svg>
+</div>
+    -->
+   
+
+  </section>
+    
+  
+  <!-- About Section -->
+  <section id="About" class="hero">
+    <h1 class="hero-title">Every site, hand-coded by me.</h1>
+    <p class="hero-subtitle">No templates ripped from marketplaces — real, original designs built from scratch.</p>
+    <a href="#" class="hero-btn">Browse Websites</a>
+
+    <!-- Selling Points / Badges -->
+    <div class="trust-badges">
+      <div class="badge">
+        <span class="badge-icon"></span>
+        <span>Fully custom</span>
+      </div>
+      <div class="badge">
+        <span class="badge-icon"></span>
+        <span>Mobile-ready</span>
+      </div>
+      <div class="badge">
+        <span class="badge-icon"></span>
+        <span>Fast delivery</span>
+      </div>
+    </div>
+    
+        <div class="hero-black-box"></div>
+  </section>
+  
+  <!-- Contact Section -->
+  <section id="Contact" class="hero">
+    <h1 class="hero-title">Every site, hand-coded by me.</h1>
+    <p class="hero-subtitle">No templates ripped from marketplaces — real, original designs built from scratch.</p>
+
+    <div class="trust-badges">
+      <div class="badge">
+        <span class="badge-icon"></span>
+        <span>Fully custom</span>
+      </div>
+      <div class="badge">
+        <span class="badge-icon"></span>
+        <span>Mobile-ready</span>
+      </div>
+      <div class="badge">
+        <span class="badge-icon"></span>
+        <span>Fast delivery</span>
+      </div>
+    </div>
+    
+        <div class="hero-black-box"></div>
+  </section>
+
+</main>
+
+<!--Ruler code start-->
+<!-- OVERLAY INTERFACE FOR PIXEL RULER TOOL -->
+<div class="toolbar" style="visibility:hidden">
+  <button id="clearBtn">Clear</button>
+  <span class="hint">Tap pointer once: turn on. Drag: draw. Same direction keeps counting; a new direction starts fresh. Tap pointer twice: turn off. Tap 3 times: hide/show UI.</span>
+</div>
+
+<!-- Canvas element for rendering measurement lines and points -->
+<canvas id="rulerCanvas"></canvas>
+
+<!-- Tooltip element displaying distance and angle measurements -->
+<div class="readout" id="readout"></div>
+
+<!--Ruler code end -->
+
+<!-- CLIENT-SIDE SCRIPTING -->
+<script>
+function updateHeaderHeightVar() {
+  const header = document.querySelector('header');
+  document.documentElement.style.setProperty('--header-height', header.offsetHeight + 'px');
+}
+updateHeaderHeightVar();
+window.addEventListener('load', updateHeaderHeightVar);
+window.addEventListener('resize', updateHeaderHeightVar);
+
+    /* --- Smooth Scrolling Navigation Handler --- */
+  const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      const targetId = this.getAttribute('href').substring(1);
+      const targetEl = document.getElementById(targetId);
+      if (!targetEl) return;
+
+      e.preventDefault();
+
+      // Calculate scroll offset considering sticky header height
+      const header = document.querySelector('header');
+      const headerHeight = header ? header.offsetHeight : 0;
+      const targetPosition = targetEl.getBoundingClientRect().top + window.scrollY - headerHeight;
+      
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+      });
+    });
+  });
+
+  
+  /* --- Mobile Navigation Drawer Logic --- */
+  const menuToggle = document.getElementById('menuToggle');
+  const navMenu = document.getElementById('navMenu');
+
+  function openMenu() {
+    navMenu.classList.add('active');
+    menuToggle.classList.add('active');
+  }
+
+  function closeMenu() {
+    if (!navMenu.classList.contains('active')) return;
+    navMenu.classList.remove('active');
+    menuToggle.classList.remove('active');
+    menuToggle.classList.add('closing');
+    setTimeout(() => {
+      menuToggle.classList.remove('closing');
+    }, 500);
+  }
+
+  // Toggle mobile navigation menu visibility
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.contains('active') ? closeMenu() : openMenu();
+  });
+
+  // Close nav drawer when any menu item is clicked
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  // Close nav drawer on click outside (unless ruler interaction is active)
+  document.addEventListener('click', (e) => {
+    if (typeof pointerOn !== 'undefined' && pointerOn) return;
+
+    const isClickInsideMenu = navMenu.contains(e.target);
+    const isClickOnToggle = menuToggle.contains(e.target);
+    if (!isClickInsideMenu && !isClickOnToggle) {
+      closeMenu();
+    }
+  });
+
+
+  /* --- Progressive Image Loading Handler --- */
+  document.querySelectorAll('.card-pic').forEach(img => {
+    if (img.complete) {
+      img.classList.add('loaded');
+    } else {
+      img.addEventListener('load', () => img.classList.add('loaded'));
+    }
+  });
+
+  /* --- Ruler code start--- */
+  /* --- PIXEL RULER OVERLAY MODULE --- */
+  const canvas = document.getElementById('rulerCanvas');
+  const ctx = canvas.getContext('2d');
+  const readout = document.getElementById('readout');
+  const clearBtn = document.getElementById('clearBtn');
+  const toolbar = document.querySelector('.toolbar');
+
+  // Application State Variables
+  let strokes = [];            // Stores completed measurement paths
+  let currentPoints = null;   // Points for the path actively being drawn
+  let drawing = false;        // Mouse/pointer drag state
+  let dragOrigin = { x: 0, y: 0 };
+  let downPos = { x: 0, y: 0 };
+  let moved = false;          // True if pointer moved beyond click threshold
+  let downOnMarker = false;
+  let shiftLocked = false;    // Orthogonal axis locking state
+  let pointerOn = false;       // Master toggle for ruler tool active state
+  let drawMode = false;        // Active drawing sub-state
+
+  // Multi-tap Gesture Logic States
+  let tapCount = 0;
+  let tapTimer = null;
+  let uiHidden = false;
+  let ignoreGesture = false;
+
+  // Ruler Configuration Constants
+  const TAP_THRESHOLD = 14;              // Max px movement allowed for a tap
+  const MARKER_HIT_RADIUS = 26;          // Interaction hit box radius
+  const DIRECTION_TOLERANCE_DEG = 0.1;   // Angle change threshold to split strokes
+  const MAGNET_TOLERANCE_DEG = 2;        // Snap-to-axis angular tolerance
+  const DOUBLE_TAP_MS = 350;             // Delay window for double/triple tap detection
+
+  // Initial pointer position centered on screen
+  let marker = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+
+  // Handle high-DPI scaling and dynamic viewport resizing
+  function resize() {
+    canvas.width = window.innerWidth * devicePixelRatio;
+    canvas.height = window.innerHeight * devicePixelRatio;
+    canvas.style.width = window.innerWidth + 'px';
+    canvas.style.height = window.innerHeight + 'px';
+    ctx.setTransform(devicePixelRatio, 0, 0, devicePixelRatio, 0, 0);
+    redraw();
+  }
+  window.addEventListener('resize', resize);
+
+  // Geometric Utility Functions
+  function distance(a, b) { return Math.hypot(b.x - a.x, b.y - a.y); }
+  function angleOf(a, b) { return Math.atan2(b.y - a.y, b.x - a.x) * 180 / Math.PI; }
+  function angleDiff(a, b) {
+    const d = Math.abs(a - b) % 360;
+    return d > 180 ? 360 - d : d;
+  }
+
+  // Constrains position to exact vertical/horizontal axes when Shift is held
+  function applyLock(a, b) {
+    if (!shiftLocked) return b;
+    const dx = Math.abs(b.x - a.x);
+    const dy = Math.abs(b.y - a.y);
+    return dx > dy ? { x: b.x, y: a.y } : { x: a.x, y: b.y };
+  }
+
+  // Calculates optimum label position and alignment relative to a line vector
+  function labelSpot(a, b, pad) {
+    pad = pad || 16;
+    const dx = b.x - a.x;
+    const dy = b.y - a.y;
+    const len = Math.hypot(dx, dy) || 1;
+    const ux = dx / len;
+    const uy = dy / len;
+    return {
+      x: b.x - ux * pad,
+      y: b.y - uy * pad,
+      align: ux >= 0 ? 'right' : 'left',
+      baseline: uy >= 0 ? 'bottom' : 'top'
+    };
+  }
+
+  // Render text label along line vector
+  function drawLabel(a, b, text) {
+    const spot = labelSpot(a, b);
+    ctx.fillStyle = '#f5f3ee';
+    ctx.font = '12px monospace';
+    ctx.textAlign = spot.align;
+    ctx.textBaseline = spot.baseline;
+    ctx.fillText(text, spot.x, spot.y);
+    ctx.textAlign = 'left';
+    ctx.textBaseline = 'alphabetic';
+  }
+
+  // Computes cumulative distance along multi-point vector path
+  function pathLength(points) {
+    let total = 0;
+    for (let i = 1; i < points.length; i++) total += distance(points[i - 1], points[i]);
+    return total;
+  }
+
+  // Draws a polyline on canvas with optional length annotation
+  function drawPath(points, color, showLabel) {
+    if (points.length < 2) return;
+    ctx.strokeStyle = color;
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.moveTo(points[0].x, points[0].y);
+    for (let i = 1; i < points.length; i++) ctx.lineTo(points[i].x, points[i].y);
+    ctx.stroke();
+
+    if (showLabel) {
+      const last = points[points.length - 1];
+      const secondLast = points[points.length - 2];
+      drawLabel(secondLast, last, Math.round(pathLength(points)) + 'px');
+    }
+  }
+
+  // Snaps coordinate onto existing vector trajectory line
+  function snapToLine(point, origin, ux, uy) {
+    const moveX = point.x - origin.x;
+    const moveY = point.y - origin.y;
+    const projected = moveX * ux + moveY * uy;
+    return {
+      x: origin.x + ux * projected,
+      y: origin.y + uy * projected
+    };
+  }
+
+  // State Persistence Handlers
+  // State Persistence Handlers
+  function saveState() {
+    try {
+      localStorage.setItem('rulerState', JSON.stringify({
+        strokes, currentPoints, marker, pointerOn, drawMode, uiHidden
+      }));
+    } catch (err) {}
+  }
+
+  function loadState() {
+    try {
+      const saved = JSON.parse(localStorage.getItem('rulerState'));
+      if (!saved) return;
+      if (saved.strokes) strokes = saved.strokes;
+      if (saved.currentPoints) currentPoints = saved.currentPoints;
+      if (saved.marker) marker = saved.marker;
+      if (typeof saved.pointerOn === 'boolean') pointerOn = saved.pointerOn;
+      if (typeof saved.drawMode === 'boolean') drawMode = saved.drawMode;
+      if (typeof saved.uiHidden === 'boolean') {
+        uiHidden = saved.uiHidden;
+        toolbar.classList.toggle('is-hidden', uiHidden);
+      }
+    } catch (err) {}
+  }
+
+  // Updates body class to toggle global CSS pointer interaction behavior
+  function updatePointerState() {
+    if (pointerOn) {
+      canvas.classList.add('active');
+      document.body.classList.add('ruler-active');
+    } else {
+      canvas.classList.remove('active');
+      document.body.classList.remove('ruler-active');
+    }
+  }
+
+  // Canvas Redraw Pipeline
+  function redraw() {
+    saveState();
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    // Draw saved/completed stroke paths
+    strokes.forEach(s => {
+      drawPath(s.points, 'rgba(46,196,182,0.6)', true);
+    });
+
+    // Draw active dynamic path currently being manipulated
+    if (currentPoints && drawMode) {
+      const live = drawing ? currentPoints.concat([marker]) : currentPoints;
+      drawPath(live, '#2ec4b6', live.length >= 2);
+    }
+
+    // Render pointer marker circle with color status (grey: disabled, teal: drawing, orange: idle active)
+    ctx.fillStyle = !pointerOn ? '#5a6478' : (drawMode ? '#2ec4b6' : '#f3961c');
+    ctx.beginPath();
+    ctx.arc(marker.x, marker.y, 8, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.strokeStyle = '#0a0e1a';
+    ctx.lineWidth = 2;
+    ctx.stroke();
+  }
+
+  // Displays tooltip readout adjacent to current path endpoint
+  function updateReadout(a, b, totalLen) {
+    const len = Math.round(totalLen);
+    const angle = angleOf(a, b).toFixed(1);
+    const spot = labelSpot(a, b, 44);
+    readout.style.display = 'block';
+    readout.style.left = spot.x + 'px';
+    readout.style.top = spot.y + 'px';
+    readout.style.transform =
+      (spot.align === 'right' ? 'translateX(-100%)' : 'translateX(0%)') + ' ' +
+      (spot.baseline === 'bottom' ? 'translateY(-100%)' : 'translateY(0%)');
+    readout.textContent = len + 'px  |  ' + angle + '°';
+  }
+
+  /* --- Pointer Interaction Event Handlers --- */
+
+  window.addEventListener('pointerdown', (e) => {
+    if (e.target.closest('.toolbar')) return; // Ignore toolbar interactions
+
+    const pos = { x: e.clientX, y: e.clientY };
+    downPos = pos;
+    downOnMarker = distance(pos, marker) <= MARKER_HIT_RADIUS;
+    dragOrigin = { x: marker.x, y: marker.y };
+    moved = false;
+    drawing = false;
+  });
+
+  window.addEventListener('pointermove', (e) => {
+    if (ignoreGesture) return;
+    const dx = e.clientX - downPos.x;
+    const dy = e.clientY - downPos.y;
+
+    // Detect if movement exceeds click threshold
+    if (!moved && Math.hypot(dx, dy) > TAP_THRESHOLD) {
+      moved = true;
+    }
+    if (!moved) return;
+    if (!pointerOn) return;
+
+    let next = { x: dragOrigin.x + dx, y: dragOrigin.y + dy };
+    next = applyLock(dragOrigin, next);
+
+    // Apply snap-to-angle logic during active drawing mode
+    if (drawMode) {
+      let snapped = false;
+
+      // Snap vector alignment to existing line trajectory
+      if (currentPoints && currentPoints.length >= 2) {
+        const last = currentPoints[currentPoints.length - 1];
+        const prev = currentPoints[currentPoints.length - 2];
+        const pdx = last.x - prev.x;
+        const pdy = last.y - prev.y;
+        const plen = Math.hypot(pdx, pdy) || 1;
+        const ux = pdx / plen;
+        const uy = pdy / plen;
+
+        const rawAngle = angleOf(last, next);
+        const prevAngle = angleOf(prev, last);
+
+        if (angleDiff(rawAngle, prevAngle) <= MAGNET_TOLERANCE_DEG ||
+            angleDiff(rawAngle, prevAngle + 180) <= MAGNET_TOLERANCE_DEG) {
+          next = snapToLine(next, last, ux, uy);
+          snapped = true;
+        }
+      }
+
+      // Snap to strict 0, 90, 180, 270 degree orthogonal axes
+      if (!snapped) {
+        const last = currentPoints && currentPoints.length > 0
+          ? currentPoints[currentPoints.length - 1]
+          : dragOrigin;
+
+        const rawAngle = angleOf(last, next);
+        const absAngle = ((rawAngle % 360) + 360) % 360;
+
+        if (angleDiff(absAngle, 0) <= MAGNET_TOLERANCE_DEG ||
+            angleDiff(absAngle, 180) <= MAGNET_TOLERANCE_DEG) {
+          next = { x: next.x, y: last.y };
+        } else if (angleDiff(absAngle, 90) <= MAGNET_TOLERANCE_DEG ||
+                   angleDiff(absAngle, 270) <= MAGNET_TOLERANCE_DEG) {
+          next = { x: last.x, y: next.y };
+        }
+      }
+    }
+
+    marker = next;
+
+    // Process ongoing drag draw updates
+    if (drawMode) {
+      if (!currentPoints) {
+        currentPoints = [{ ...dragOrigin }];
+      }
+      drawing = true;
+      const liveTotal = pathLength(currentPoints) + distance(currentPoints[currentPoints.length - 1], marker);
+      updateReadout(currentPoints[currentPoints.length - 1], marker, liveTotal);
+    } else {
+      drawing = false;
+      readout.style.display = 'none';
+    }
+    redraw();
+  });
+
+  window.addEventListener('pointerup', (e) => {
+    if (ignoreGesture) { ignoreGesture = false; return; }
+    if (e.target.closest('.toolbar')) return;
+
+    // Handle drag release in drawing mode
+    if (moved && pointerOn && drawMode) {
+      if (currentPoints && distance(currentPoints[currentPoints.length - 1], marker) > 3) {
+        currentPoints.push({ ...marker });
+
+        // Split stroke if direction change exceeds threshold angle
+        if (currentPoints.length >= 3) {
+          const prevA = currentPoints[currentPoints.length - 3];
+          const prevB = currentPoints[currentPoints.length - 2];
+          const lastA = currentPoints[currentPoints.length - 2];
+          const lastB = currentPoints[currentPoints.length - 1];
+
+          const prevAngle = angleOf(prevA, prevB);
+          const newAngle = angleOf(lastA, lastB);
+
+          if (angleDiff(prevAngle, newAngle) > DIRECTION_TOLERANCE_DEG) {
+            strokes.push({ points: currentPoints.slice(0, -1) });
+            currentPoints = currentPoints.slice(-2);
+          }
+        }
+      }
+    } else if (!moved) {
+      // Tap Sequence Gesture Controller
+      tapCount++;
+      clearTimeout(tapTimer);
+
+      tapTimer = setTimeout(() => {
+        if (tapCount === 1) {
+          // Single Tap: Toggle active drawing mode on/off
+          if (pointerOn) {
+            if (drawMode) {
+              if (currentPoints && currentPoints.length >= 2) {
+                strokes.push({ points: currentPoints });
+              }
+              currentPoints = null;
+            }
+            drawMode = !drawMode;
+          }
+        } else if (tapCount === 2) {
+          // Double Tap: Toggle entire ruler tool activation state
+          if (pointerOn) {
+            pointerOn = false;
+            drawMode = false;
+            strokes = [];
+            currentPoints = null;
+          } else {
+            pointerOn = true;
+            drawMode = false;
+          }
+          updatePointerState();
+        } else if (tapCount >= 3) {
+          // Triple Tap: Hide/Show overlay control toolbar
+          uiHidden = !uiHidden;
+          toolbar.classList.toggle('is-hidden', uiHidden);
+          saveState();
+        }
+
+        tapCount = 0;
+        redraw();
+      }, DOUBLE_TAP_MS);
+    }
+
+    drawing = false;
+    readout.style.display = 'none';
+    redraw();
+  });
+
+  // Reset draw tracking state if gesture is interrupted by browser
+  window.addEventListener('pointercancel', () => {
+    ignoreGesture = false;
+    drawing = false;
+    readout.style.display = 'none';
+    redraw();
+  });
+
+  // Shift key event listeners for orthogonal locking
+  window.addEventListener('keydown', (e) => { if (e.key === 'Shift') shiftLocked = true; });
+  window.addEventListener('keyup', (e) => { if (e.key === 'Shift') shiftLocked = false; });
+
+  /* --- Clear Button Controls --- */
+  
+  clearBtn.addEventListener('pointerdown', (e) => {
+    e.stopPropagation();
+    ignoreGesture = true; // Prevent clearing action from triggering ruler drawing gestures
+  });
+
+  clearBtn.addEventListener('pointerup', (e) => {
+    e.stopPropagation();
+  });
+
+  clearBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    // Reset tap sequences and draw state
+    clearTimeout(tapTimer);
+    tapCount = 0;
+    moved = false;
+    drawing = false;
+
+    // Reset ruler measurements
+    strokes = [];
+    currentPoints = null;
+    marker = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+    readout.style.display = 'none';
+
+    redraw();
+  });
+
+  // Application Initialization: Load persisted state and initialize canvas display
+  loadState();
+  resize();
+    (function() {
+    var toolbar = document.querySelector('.toolbar');
+    try {
+      var saved = JSON.parse(localStorage.getItem('rulerState'));
+      if (saved && saved.uiHidden) {
+        toolbar.classList.add('is-hidden');
+      }
+    } catch (e) {}
+    toolbar.style.visibility = '';
+  })();
+    /* --- Ruler code End --- */
+    
+    
+    document.querySelectorAll('.nav-link').forEach(link => {
+  link.addEventListener('click', function (e) {
+    const href = this.getAttribute('href');
+
+    // Only handle internal hash links
+    if (!href || !href.startsWith('#')) return;
+
+    e.preventDefault();
+
+    const target = document.querySelector(href);
+    if (!target) return;
+
+    // Only Home gets the offset
+    const offset = href === '#home' ? 100 : 0;
+
+    const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+
+    window.scrollTo({
+      top,
+      behavior: 'smooth'
+    });
+  });
+});
+</script>
+
+</body>
+</html>
