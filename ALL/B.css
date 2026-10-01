@@ -1,0 +1,21 @@
+body
+{
+ margin:0;
+ background:red;
+	
+	}
+.bodydiv
+{
+color:white;
+background:black;
+min-height:100vh;
+	
+	}
+	.bodydiv2
+{
+color:black;
+background:white ;
+height:10%;
+margin-top:0px;
+	
+	}
