@@ -10,12 +10,11 @@ background:black;
 min-height:100vh;
 	
 	}
-	.bodydiv2
-{
-color:black;
-background:green ;
-width:300px;
-height:10%;
-margin-top:0px;
-	
-	}
+
+.bodydiv2 {
+  color: black;
+  background: green;
+  width: 300px;
+  height: 10vh;
+  margin-top: 0;
+}
